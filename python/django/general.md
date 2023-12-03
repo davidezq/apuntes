@@ -31,3 +31,8 @@ python manage.py makemigrations
 ```shell
 python manage.py migrate
 ```
+
+## Crear un superusuario
+```shell
+python manage.py createsuperuser
+```
