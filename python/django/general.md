@@ -1,6 +1,6 @@
 # Django cheatsheet
 
-## version
+## Version
 ```shell
 python -m django --version
 ```
@@ -36,3 +36,10 @@ python manage.py migrate
 ```shell
 python manage.py createsuperuser
 ```
+## Cambiar de idioma
+en settings.py
+```py
+LANGUAGE_CODE = "en-us" # "es"
+```
+
+
