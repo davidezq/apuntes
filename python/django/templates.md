@@ -16,4 +16,7 @@
 ```html
 <p>{{ post.published | date: "SHORT_DATE_FORMAT" }}</p>
 ```
-
+## saltos de linea
+```html
+<p>{{ post.content | linebreaks }}</p>
+```
