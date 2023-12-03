@@ -21,3 +21,13 @@ python manage.py runserver 0.0.0.0:8080
 ```shell
 python manage.py startapp <nombre_app>
 ```
+
+## Hacer una migracion/migraciones
+```shell
+python manage.py makemigrations
+```
+
+## Ejecutar las migraciones
+```shell
+python manage.py migrate
+```
