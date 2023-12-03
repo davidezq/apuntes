@@ -7,4 +7,7 @@
 ...
 <img class="..." src="{% static 'core/img/intro.jpg' %}" alt="">
 ```
-##
+## Url con nombre
+```html
+<a href="{% url '<url_name>'%}"
+```
