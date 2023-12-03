@@ -11,7 +11,8 @@ class Post(models.Model):
 ```py
 class Post(models.Model):
   ...
-  categories = models.ManytoManyField(Category, verbose_name="Categorias")
+  # related_name -> cambia el nombre de la relación en la tabla 'hija'
+  categories = models.ManytoManyField(Category, verbose_name="Categorias", related_name="get_posts")
 ```
 
 ## obtener todos los objetos de un modelo de la base de datos
