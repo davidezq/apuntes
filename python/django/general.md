@@ -26,6 +26,9 @@ python manage.py startapp <nombre_app>
 ```shell
 python manage.py makemigrations
 ```
+```shell
+python manage.py makemigrations <nombre_app>
+```
 
 ## Ejecutar las migraciones
 ```shell
