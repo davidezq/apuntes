@@ -22,3 +22,12 @@ class PostAdmin (admin.ModelAdmin):
 admin.site.register(Post, PostAdmin)
 ```
 
+## ordenar
+```py
+class PostAdmin (admin.ModelAdmin):
+  ...
+  ordering = ('author',) # <--- filtrar 1 vez
+  ordering = ('author','published') # <--- filtra primero por 'author' y luego por 'published'
+admin.site.register(Post, PostAdmin)
+```
+
