@@ -23,6 +23,12 @@ Model.objects.all
 Model.objects.get(id=)
 ```
 
+## obtener objetos por filtro
+```py
+# obtiene el objecto que contenga el valor del otro objeto
+Model.objects.filter(<propiedad>=objeto_de_relacion)
+```
+
 
 
 
