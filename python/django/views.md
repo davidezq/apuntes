@@ -24,4 +24,11 @@ def index(request):
 # renderizar una plantilla
 def index(request):
     return render(request, "core/index.html")
+
+# renderizar pasando un 'path variable'
+# en urls.py
+# path('/category/<int:category_id>/', views.category, name='category')
+def category(request,category_id):
+    category = Category.objects.get(id=category_id)
+    return render(request, "blog/category.html", {'category': category})
 ```
