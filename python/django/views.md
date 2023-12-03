@@ -16,6 +16,7 @@ mysite/
 
 ## Crear una vista
 ```python
+from django.shortcuts import get_object_or_404
 from django.http import HttpResponse,render
 
 def index(request):
@@ -29,6 +30,7 @@ def index(request):
 # en urls.py
 # path('/category/<int:category_id>/', views.category, name='category')
 def category(request,category_id):
-    category = Category.objects.get(id=category_id)
+    # category = Category.objects.get(id=category_id)
+    category = get_object_or_404(Category,id=category_id)
     return render(request, "blog/category.html", {'category': category})
 ```
