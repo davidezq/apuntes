@@ -1,12 +1,13 @@
 # modelos
 
-# relación de uno a muchos
+## relación de uno a muchos
 ```py
 class Post(models.Model):
   ...
   author = models.ForeignKey(User, verbose_name = "autor", on_delete=models.CASCADE)
 ```
-# relación de muchos a muchos
+
+## relación de muchos a muchos
 ```py
 class Post(models.Model):
   ...
@@ -28,7 +29,10 @@ Model.objects.get(id=)
 # obtiene el objecto que contenga el valor del otro objeto
 Model.objects.filter(<propiedad>=objeto_de_relacion)
 ```
-
+## obtener los objetos de una relación de manera inversa
+```py
+Model.post_set.all # buscar
+```
 
 
 
