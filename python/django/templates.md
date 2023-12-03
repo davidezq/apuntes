@@ -9,5 +9,11 @@
 ```
 ## Url con nombre
 ```html
-<a href="{% url '<url_name>'%}"
+<a href="{% url '<url_name>'%}">django url template</a>
 ```
+
+## formatear fechas
+```html
+<p>{{ post.published | date: "SHORT_DATE_FORMAT" }}</p>
+```
+
