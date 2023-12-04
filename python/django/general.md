@@ -44,5 +44,17 @@ en settings.py
 ```py
 LANGUAGE_CODE = "en-us" # "es"
 ```
-
-
+## expandir el contexto
+```py
+TEMPLATES = [
+  {
+    'OPTIONS':
+      {
+        'context_processors':[
+          ...,
+          '<app_name>.processors.<nombre_funcion>'
+        ]
+      }
+  }
+]
+```
